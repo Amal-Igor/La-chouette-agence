@@ -5,6 +5,13 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+h2, h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 a,
@@ -435,11 +442,6 @@ nav .caret {
     float: right;
 }
 
-.mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -867,8 +869,7 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .page-container,
-    #hero-bloc {
+    body{
         overflow-x: hidden;
         position: relative;
     }
@@ -890,7 +891,7 @@ h4 {
 }
 
 @media (max-width: 767px) {
-    .page-container {
+    body {
         overflow-x: hidden;
         position: relative;
     }

@@ -4844,6 +4844,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a {
     position: relative;
     display: block;
+    overflow: hidden;
     padding: 10px 15px
 }
 

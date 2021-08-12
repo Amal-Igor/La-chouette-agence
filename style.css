@@ -14,6 +14,46 @@ h2, h3{
     text-align: center;
 }
 
+::after{
+    font-family: 'Font Awesome 5 free';
+    position: relative;
+}
+
+#nav-index::after{
+    content:'\f015';
+    font-weight: 800;
+    left: 33px;
+    transition: left 450ms;
+}
+
+#nav-index:hover {
+    transform: translateX(-7%);
+    transition: transform 500ms;
+}
+
+#nav-index:hover::after{
+    left: 5px;
+    transition: left 500ms ease-out;
+}
+
+#nav-contact::after{
+    content:'\f0e0';
+    left:32px;
+    transition: left 450ms;
+}
+
+#nav-contact:hover {
+    transform: translateX(-7%);
+    transition: transform 500ms;
+}
+
+#nav-contact:hover::after{
+    left: 5px;
+    transition: left 500ms ease-out;
+}
+
+
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -653,7 +693,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #3a3939!important;
 }
 
 .container {

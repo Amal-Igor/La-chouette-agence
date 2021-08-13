@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth ;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -14,45 +18,115 @@ h2, h3{
     text-align: center;
 }
 
-::after{
+
+
+
+
+/*Header*/
+.nav-item::after{
     font-family: 'Font Awesome 5 free';
     position: relative;
 }
 
+
 #nav-index::after{
     content:'\f015';
     font-weight: 800;
-    left: 33px;
     transition: left 450ms;
-}
-
-#nav-index:hover {
-    transform: translateX(-7%);
-    transition: transform 500ms;
-}
-
-#nav-index:hover::after{
-    left: 5px;
-    transition: left 500ms ease-out;
 }
 
 #nav-contact::after{
     content:'\f0e0';
-    left:32px;
     transition: left 450ms;
 }
 
-#nav-contact:hover {
-    transform: translateX(-7%);
-    transition: transform 500ms;
+/*Nav-item max-width 767*/
+@media screen and (max-width: 767px){
+    #nav-index::after{
+        left: 10px;
+    }
+
+
+    #nav-contact::after{
+        left:10px;
+    }
+
 }
 
-#nav-contact:hover::after{
-    left: 5px;
-    transition: left 500ms ease-out;
+@media screen and (min-width: 767px){
+    #nav-index::after{
+        left: 33px;
+    }
+
+    #nav-index:hover {
+        transform: translateX(-7%);
+        transition: transform 500ms;
+    }
+
+    #nav-contact::after{
+        left:32px;
+    }
+
+    #nav-index:hover::after{
+        left: 5px;
+        transition: left 500ms ease-out;
+    }
+
+    #nav-index:focus::after{
+        left: 5px;
+    }
+
+    #nav-index:focus{
+        transform: translateX(-7%) scale(1.09);
+        transition:all 350ms;
+        text-shadow: 1px 3px 3px rgba(156,156,156,0.59);
+    }
+
+    #nav-contact:hover {
+        transform: translateX(-7%);
+        transition: transform 500ms;
+    }
+    
+    #nav-contact:hover::after{
+        left: 5px;
+        transition: left 500ms ease-out;
+    }
+    
+    #nav-contact:focus::after{
+        left: 5px;
+    }
+    
+    #nav-contact:focus{
+        transform: translateX(-7%) scale(1.09);
+        transition:all 350ms;
+        text-shadow: 1px 3px 3px rgba(156,156,156,0.59);
+    }
+
 }
 
 
+
+
+/*
+#nav-li-item:focus{
+    border:solid 2px black;
+}
+*/
+
+
+
+
+
+/*Contact-Card*/
+.contact-card{
+    background-color: rgba(81, 31, 0, 0.658);
+    transition: background-color 300ms;
+}
+
+.contact-card:hover{
+    background-color: rgba(81, 31, 0, 0.85);
+    transition: background-color 450ms;
+}
 
 a,
 button {
@@ -724,6 +798,7 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
+    width: 80%;
     margin: auto auto auto auto;
 }
 

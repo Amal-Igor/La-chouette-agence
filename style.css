@@ -51,6 +51,10 @@ h2, h3{
         left:10px;
     }
 
+    .nav-li-item:focus, .nav-li-item:hover{
+        background: rgba(117, 83, 83, 0.15);
+    }
+
 }
 
 @media screen and (min-width: 767px){
@@ -77,9 +81,9 @@ h2, h3{
     }
 
     #nav-index:focus{
-        transform: translateX(-7%) scale(1.09);
+        transform: translateX(-7%) scale(1.06);
         transition:all 350ms;
-        text-shadow: 1px 3px 3px rgba(156,156,156,0.59);
+        
     }
 
     #nav-contact:hover {
@@ -97,9 +101,8 @@ h2, h3{
     }
     
     #nav-contact:focus{
-        transform: translateX(-7%) scale(1.09);
+        transform: translateX(-7%) scale(1.06);
         transition:all 350ms;
-        text-shadow: 1px 3px 3px rgba(156,156,156,0.59);
     }
 
 }
@@ -119,13 +122,55 @@ h2, h3{
 
 /*Contact-Card*/
 .contact-card{
-    background-color: rgba(81, 31, 0, 0.658);
+    background-color: rgba(30, 28, 23, 0.7);
     transition: background-color 300ms;
 }
 
 .contact-card:hover{
-    background-color: rgba(81, 31, 0, 0.85);
+    background-color: rgba(30, 28, 23, 0.85);
     transition: background-color 450ms;
+}
+
+.btn-atomic-tangerine{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+@keyframes push-on-hover {
+    50% {
+      transform: scale(0.97);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.btn-atomic-tangerine:focus{
+    animation-name: push-on-hover;
+    animation-duration: 850ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+/*Main*/
+.introduction{
+    width: 64%;
+    font-size: 23px;
+    margin: auto;
+}
+
+.quote{
+    width: 77%;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/*contact-link*/
+.ltc-white.bold-link:focus{
+    border: dotted 1px;
 }
 
 a,
@@ -316,7 +361,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, 0.64);
 }
 
 .d-bloc .panel button:hover,
@@ -870,7 +915,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(30, 28, 23, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -896,7 +941,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #C85019;
     color: #FFFFFF!important;
 }
 
@@ -1048,7 +1093,11 @@ h4 {
         width: 100%;
     }
     .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
+        background: rgba(0, 0, 0, .1);
+    }
+
+    .nav > li:focus{
+        background: rgba(0, 0, 0, .1 );
     }
     .dropdown .dropdown a .caret {
         float: none;

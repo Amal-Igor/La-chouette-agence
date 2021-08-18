@@ -108,28 +108,12 @@ h2, h3{
 }
 
 
-
-
-/*
-#nav-li-item:focus{
-    border:solid 2px black;
-}
-*/
-
-
-
-
-
 /*Contact-Card*/
 .contact-card{
-    background-color: rgba(30, 28, 23, 0.7);
-    transition: background-color 300ms;
+    background-color: rgba(30, 28, 23, 0.8);
 }
 
-.contact-card:hover{
-    background-color: rgba(30, 28, 23, 0.85);
-    transition: background-color 450ms;
-}
+
 
 .btn-atomic-tangerine{
     display: inline-block;
@@ -150,7 +134,7 @@ h2, h3{
 
 .btn-atomic-tangerine:focus{
     animation-name: push-on-hover;
-    animation-duration: 850ms;
+    animation-duration: 900ms;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -168,6 +152,10 @@ h2, h3{
 }
 
 
+/*Footer*/
+.col-sm-4{
+    color:white;
+}
 /*contact-link*/
 .ltc-white.bold-link:focus{
     border: dotted 1px;
@@ -812,7 +800,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #3a3939!important;
+    color: black!important;
 }
 
 .container {
@@ -933,7 +921,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #C85019;
 }
 
 .tc-white {
@@ -976,7 +964,8 @@ h4 {
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background: repeating-linear-gradient( to bottom, #bfa7a73d, #74747400 1px, #f7f7f763 1px, #fbf9f9d9 9px );
+    background-size: auto;
 }
 
 .bg-banniere {
@@ -984,7 +973,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {

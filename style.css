@@ -83,6 +83,8 @@ h2, h3{
     #nav-index:focus{
         transform: translateX(-7%) scale(1.06);
         transition:all 350ms;
+        outline: 1px dashed #000000;
+        outline-offset: 0px;
         
     }
 
@@ -103,6 +105,8 @@ h2, h3{
     #nav-contact:focus{
         transform: translateX(-7%) scale(1.06);
         transition:all 350ms;
+        outline: 1px dashed #000000;
+        outline-offset: 0px;
     }
 
 }
@@ -123,20 +127,10 @@ h2, h3{
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-@keyframes push-on-hover {
-    50% {
-      transform: scale(0.97);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
 .btn-atomic-tangerine:focus{
-    animation-name: push-on-hover;
-    animation-duration: 900ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    outline: 2px dotted white;
+    outline-offset: 0px;
 }
 /*Main*/
 .introduction{
@@ -151,6 +145,12 @@ h2, h3{
     font-size: 18px;
 }
 
+/*centrage imges*/
+.col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*Footer*/
 .col-sm-4{
@@ -164,7 +164,6 @@ h2, h3{
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
 }
 
 a:hover {

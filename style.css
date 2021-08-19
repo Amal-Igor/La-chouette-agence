@@ -29,7 +29,7 @@ h2, h3{
 }
 
 
-#nav-index::after{
+#nav-index::after, #nav-index-2::after{
     content:'\f015';
     font-weight: 800;
     transition: left 450ms;
@@ -42,12 +42,12 @@ h2, h3{
 
 /*Nav-item max-width 767*/
 @media screen and (max-width: 767px){
-    #nav-index::after{
+    #nav-index::after, #nav-index-2::after{
         left: 10px;
     }
 
 
-    #nav-contact::after{
+    #nav-contact::after, #nav-contact-2::after{
         left:10px;
     }
 
@@ -58,29 +58,29 @@ h2, h3{
 }
 
 @media screen and (min-width: 767px){
-    #nav-index::after{
+    #nav-index::after, #nav-index-2::after{
         left: 33px;
     }
 
-    #nav-index:hover {
+    #nav-index:hover, #nav-index-2 {
         transform: translateX(-7%);
         transition: transform 500ms;
     }
 
-    #nav-contact::after{
+    #nav-contact::after, #nav-contact-2{
         left:32px;
     }
 
-    #nav-index:hover::after{
+    #nav-index:hover::after, #nav-index-2:hover::after{
         left: 5px;
         transition: left 500ms ease-out;
     }
 
-    #nav-index:focus::after{
+    #nav-index:focus::after, #nav-index-2:focus::after{
         left: 5px;
     }
 
-    #nav-index:focus{
+    #nav-index:focus, #nav-index-2:focus{
         transform: translateX(-7%) scale(1.06);
         transition:all 350ms;
         outline: 1px dashed #000000;
@@ -88,21 +88,21 @@ h2, h3{
         
     }
 
-    #nav-contact:hover {
+    #nav-contact:hover, #nav-contact-2:hover {
         transform: translateX(-7%);
         transition: transform 500ms;
     }
     
-    #nav-contact:hover::after{
+    #nav-contact:hover::after, #nav-contact-2:hover::after{
         left: 5px;
         transition: left 500ms ease-out;
     }
     
-    #nav-contact:focus::after{
+    #nav-contact:focus::after, #nav-contact-2:focus::after{
         left: 5px;
     }
     
-    #nav-contact:focus{
+    #nav-contact:focus, #nav-contact-2:focus{
         transform: translateX(-7%) scale(1.06);
         transition:all 350ms;
         outline: 1px dashed #000000;
@@ -113,11 +113,98 @@ h2, h3{
 
 
 /*Contact-Card*/
-.contact-card{
-    background-color: rgba(30, 28, 23, 0.8);
+
+
+/*Page 2*/
+/*Input*/
+
+/*
+.input-style{
+    position: relative;
 }
 
+.fancy-input{
+    transition: all 200ms ease-in;
+    width: 250px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px dashed #c0c0c0;
+    border-radius: 40px;
+    font-size: 25px;
+    text-indent: 17px;
+    line-height: 40px;
+    vertical-align: middle;
+    font-family: "Oswald", sans-serif;
+}
 
+.fancy-label{
+    user-select: none;
+transition: all 120ms ease-out;
+position: absolute;
+top: 0px;
+left: 20px;
+color: #c0c0c0;
+background: white;
+font-size: 25px;
+line-height: 25px;
+pointer-events: none;
+}
+
+.fancy-input:focus{
+    border: 1px dashed #c0c0c0 !important;
+}
+
+.fancy-input:focus .fancy-label{
+    top: -20px;
+    font-size: 15px;
+    line-height: 15px;
+    color: #444;
+}
+*/
+.bg {
+    animation:slide 5s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #cc4933 50%, #b61fc3 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:6s;
+  }
+  
+  .bg3 {
+    animation-duration:7s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 
 .btn-atomic-tangerine{
     display: inline-block;
@@ -171,6 +258,9 @@ a:hover {
     cursor: pointer;
 }
 
+::after, ::before{
+    box-sizing: border-box;
+}
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -922,15 +1012,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #C85019;
+    background-color: #cc4933;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffffff!important;
 }
 
 .btn-atomic-tangerine {
-    background: #C85019;
+    background: #cc4933;
     color: #FFFFFF!important;
 }
 

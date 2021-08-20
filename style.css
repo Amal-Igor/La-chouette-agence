@@ -46,6 +46,24 @@ background-color: #FDF7DB;
 transition: right 435ms ease-in-out;
 }
 
+@media all and (min-width:470px) and (max-width:768px){
+.navbar-header:hover::after{
+    left:215px;
+    transition: left 550ms ease-in-out;
+}
+
+.navbar-header::after {
+    left: 35px;
+    transition: left 435ms ease-in-out;
+}
+}
+
+@media all and (max-width:469px){
+    .navbar-header::after{
+        display:none;
+    }
+}
+
 
 
 .nav-item::after{
@@ -186,6 +204,7 @@ pointer-events: none;
     color: #444;
 }
 */
+
 .bg {
     animation:slide 5s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #cc4933 50%, #b61fc3 50%);
@@ -282,7 +301,11 @@ pointer-events: none;
     border: dotted 1px;
 }
 
-
+/*section social*/
+#social-section{
+    display: flex;
+    justify-content: space-around;
+}
 /*Page 2*/
 /*Input*/
 
@@ -290,14 +313,36 @@ pointer-events: none;
     content: '';
     position: absolute;
     border-right: 3px solid #cc4933;
-    left: -3px;
-    height: 83%;
+    left: -1px;
+    height: 80.7%;
+    z-index: 50;
 }
 #form_1{
     position: relative;
 }
 
+@media all and (min-width: 982px){
+#form_1::before{
+    height: 80%;
+}
+}
 
+@media all and (min-width: 466px) and (max-width: 767px){
+    #form_1::before{
+        height: 78.1%;
+        left: 2px;
+    }
+    }
+@media all and (max-width:465px){
+#form_1::before{
+    left: 2px;
+    height: 79.3%;
+}
+}
+   
+    
+
+/*
 .form-group::after {
     content: '';
     border-top: 2px solid;
@@ -314,7 +359,7 @@ pointer-events: none;
     transition: border-color 450ms;
 }
 
-
+*/
 
     .form-group.input-style {
         position: relative;
@@ -960,7 +1005,7 @@ h1{
 label{
 font-family: "helvetica";
 font-weight: 600;
-color: black !important;
+color: #352c2ce8 !important;
 font-size: 15px;
 }
 

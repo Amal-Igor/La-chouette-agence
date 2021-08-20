@@ -3157,12 +3157,20 @@ output {
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
 }
 
-
+.form-control:hover {
+    border-bottom: 2px solid rgba(45, 144, 211, 0.856);
+}
 
 .form-control:focus, .form-control:active {
-    border: none;
+        border-top: 2px solid rgba(47, 172, 255, 0.856);
+        border-right: 2px solid rgba(47, 172, 255, 0.856);
+        border-bottom: 2px solid rgba(47, 172, 255, 0.856);
     outline: none;
     
+}
+
+.form-control:focus .form-group::after{
+    opacity: 0;
 }
 
 /*
@@ -3203,7 +3211,7 @@ fieldset[disabled] .form-control {
 }
 
 textarea.form-control {
-    height: auto
+    height: 6em
 }
 
 input[type=search] {

@@ -3146,9 +3146,10 @@ output {
     line-height: 1.42857143;
     color: #555;
     background-color: #fdf7db;
+    border-bottom: 2px solid #cbc5a9;
     transition: background-color 300ms ease-in-out;
     background-image: none;
-    border-style: inherit;
+   /* border-style: inherit;*/
     border-image: inherit;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -3172,18 +3173,6 @@ output {
 
 .form-control:focus .form-group::after{
     opacity: 0;
-}
-
-/*
-.form-control:focus {
-    border-bottom:2px solid #126FE6A6;
-    outline: 0;
-    background-color: #e5e3da;
-*/
-    /*
-    transition: background-color 350ms ease-in-out;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)*/
 }
 
 .form-control::-moz-placeholder {
@@ -4397,7 +4386,7 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 .open>.dropdown-menu {
@@ -5149,7 +5138,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px

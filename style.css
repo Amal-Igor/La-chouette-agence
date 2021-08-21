@@ -339,32 +339,16 @@ pointer-events: none;
     height: 79.3%;
 }
 }
-   
-    
-
-/*
-.form-group::after {
-    content: '';
-    border-top: 2px solid;
-    height: 22em;
-    position: absolute;
-    width: 100%;
-    border-color: #55595c5e;
-    transition: border-color 450ms;
-}
-
-
-.form-group:hover::after{
-    border-color:rgba(45, 144, 211, 0.856) ;
-    transition: border-color 450ms;
-}
-
-*/
 
     .form-group.input-style {
         position: relative;
     }
 
+/*carte de visite*/
+.visit-card{
+    font-weight: 600;
+    color: #4b433f;
+}
 a,
 button {
     transition: all .3s ease-in-out;

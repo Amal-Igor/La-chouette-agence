@@ -305,6 +305,16 @@ transition: right 435ms ease-in-out;
     font-weight: 600;
     color: #4b433f;
 }
+
+/*Bouton-scroll*/
+#scroll-button:focus{
+    outline: 2px dashed rgba(0, 0, 0, 0.99);
+    outline-offset: 3px;
+}
+
+
+
+
 a,
 button {
     transition: all .3s ease-in-out;

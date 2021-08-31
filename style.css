@@ -307,7 +307,7 @@ transition: right 435ms ease-in-out;
 }
 
 /*Bouton-scroll*/
-#scroll-button:focus{
+.scroll-button-access:focus{
     outline: 2px dashed rgba(0, 0, 0, 0.99);
     outline-offset: 3px;
 }
